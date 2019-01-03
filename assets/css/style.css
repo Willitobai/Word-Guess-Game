@@ -109,11 +109,12 @@ p{
   width:35px;
   height:30px;
   padding-top:10px;
-  background:$white;
+  background:orange;
   color:$base-color;
   cursor:pointer;
   @include corners(5px);
   border: solid 1px $white;
+}
     
     &:hover{
       background:$base-color;

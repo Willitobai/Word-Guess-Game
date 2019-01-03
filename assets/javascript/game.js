@@ -35,6 +35,7 @@ window.onload = function () {
         check();
         myButtons.appendChild(letters);
         letters.appendChild(list);
+
       }
     }
       
@@ -231,6 +232,8 @@ window.onload = function () {
       play();
     }
   }
-  
+  function peppa() {
+    play();
+  }
   
   
