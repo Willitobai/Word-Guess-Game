@@ -47,13 +47,13 @@
 }
 
 body {
-  background: url(../images/ufo2.jpg)  no-repeat;
-  background-size:cover;
+  background: url(../images/background.jpeg);
+  width:100%;
   font-family: "Times New Rew", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   color:$white;
   height:100%;
   text-align:center;
-  font-size:20px;
+  font-size:18px;
 
 }
 
@@ -63,46 +63,36 @@ body {
   margin:0 auto;
 }
 .wrapper h1 {
-  font-size:70px;
+  font-size:45px;
   font-weight:bold;
   margin-top: 50px;
-    color:lightgreen;
 }
 .wrapper h2 {
-  color:lightgreen;
-  text-shadow: 5px 5px 5px rgb(194, 196, 218);
-
+text-shadow: 5px 5px 5px darkgray;
 }
 canvas{
-  color:whitesmoke;
-  border: $white dashed 20px;
+  color:$white;
+  border: $white dashed 2px;
   padding:15px;
 }
 
 h1, h2, h3 {
 	font-family: 'Roboto', sans-serif;
-	font-weight: 500;
+	font-weight: 100;
 	text-transform: uppercase;
    margin:5px 0;
 }
 
 h1 {
-  font-size: 2.6em;
-
-  
+	font-size: 2.6em;
 }
 
 h2 {
-  font-size: 1.6em;
-  
+	font-size: 1.6em;
 }
 
 p{
   font-size: 1.6em;
-  clear:both;
-    color:hotpink;
-  
-  
 }
 
 #alphabet {
@@ -119,17 +109,13 @@ p{
   width:35px;
   height:30px;
   padding-top:10px;
-  background:rgba(189, 218, 29, 0.6);
-  color:$white;
+  background:orange;
+  color:$base-color;
   cursor:pointer;
   @include corners(5px);
   border: solid 1px $white;
-    border-radius:5px;
 }
-#alphabet li:hover {
-  background:rgba(189, 218, 29, 1);
-
-}  
+    
     &:hover{
       background:$base-color;
       border: solid 1px $white;
@@ -139,6 +125,7 @@ p{
 
 #my-word {
   margin: 0;
+  display: block;
   padding: 0;
   display:block;
 }
@@ -180,18 +167,21 @@ button{
   width:180px;
   margin: 10px;
   outline: none;
-  border-radius: 5px;
-    background: lightgreen;
-    
+  
     &:hover{
       @include transition;
-      background:$orange;
+      background:$white;
       border: solid 1px $white;
       color:$base-color;
     }
 }
-button:hover {
-    background:hotpink;
+
+#play:hover,
+#pause:hover {
+    cursor:pointer;
+}
+#pause {
+    display:none;
 }
 
 @media (max-width: 767px) {

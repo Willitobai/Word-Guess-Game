@@ -99,7 +99,7 @@ window.onload = function () {
       myStickman = document.getElementById("stickman");
       context = myStickman.getContext('2d');
       context.beginPath();
-      context.strokeStyle = "#E77D0A";
+      context.strokeStyle = "#fff";
       context.lineWidth = 2;
     };
     
@@ -119,15 +119,15 @@ window.onload = function () {
   }
   
      frame1 = function() {
-       draw (10, 150, 150, 150);
+       draw (0, 150, 150, 150);
      };
      
      frame2 = function() {
-       draw (10, 7.1, 10, 600);
+       draw (10, 0, 10, 600);
      };
     
      frame3 = function() {
-       draw (9, 6, 60, 5);
+       draw (0, 5, 70, 5);
      };
     
      frame4 = function() {
@@ -195,7 +195,7 @@ window.onload = function () {
       console.log(word);
       buttons();
   
-      gusses = [ ];
+      guesses = [ ];
       lives = 10;
       counter = 0;
       space = 0;
@@ -232,20 +232,8 @@ window.onload = function () {
       play();
     }
   }
-  
-  // audio function
-function toggleAudio() {
-  var audioElem = document.getElementById('player');
-  var soundOn = document.getElementById('play');
-  var soundOff = document.getElementById('pause');
-  
-  if(audioElem.paused) {
-      audioElem.play();
-      $(soundOn).show();
-      $(soundOff).hide();
-  } else {
-      audioElem.pause();
-      $(soundOn).hide();
-      $(soundOff).show();
+  function peppa() {
+    play();
   }
-}
+  
+  
